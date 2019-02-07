@@ -1,12 +1,16 @@
 #include <stdio.h>
+
 /**
- * main - Prints exactly with proper grammar  a string of characters
+ * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
+ *
+ * Printing statements with printf using \r
+ *
  */
+
 int main(void)
 {
-       printf("with proper grammar, but the outcome is a piece of art,");
-       return(0);
-
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
