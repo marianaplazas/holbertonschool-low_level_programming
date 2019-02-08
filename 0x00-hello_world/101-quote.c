@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  *main start
@@ -6,11 +6,9 @@
  *return 0 if is sucessful
  */
 
-int main () {
-	
-	char dor[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+int main(void)
+{
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",59);
 
-	fwrite(dor, sizeof(char), sizeof(dor) - 1, stderr);
-  
-	return(1);
+	return (1);
 }
