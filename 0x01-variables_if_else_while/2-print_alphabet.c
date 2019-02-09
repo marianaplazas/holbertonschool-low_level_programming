@@ -3,18 +3,18 @@
 /**
  *main stars the program
  *
- *return 0 if is success
+ *value return 0 if is success
  */
 
 int main(void)
 {
-	char az='a';
+	char az ='a';
 
 	while (az <= 'z')
 	{
 		putchar(az);
 		az++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return(0);
 }
