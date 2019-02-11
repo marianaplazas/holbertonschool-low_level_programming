@@ -1,24 +1,32 @@
 #include <stdio.h>
 
 /**
- *main - start
+ * main - entry point
  *
- *
- *Return: 0 
+ * Return: always 0 if is success
  */
 
 int main(void)
 {
-	int a;
+        int a;
 
-	for (a = 48 ; a <= 57 ; a++)
-	{
-		putchar(a);
-	}
-	for (a = 97 ; onten < 103 ; a++)
-	{
-		putchar(a);
-	}
-	putchar('\n');
-	return (0);
+        int z;
+
+        a = 48;
+
+        z = 97;
+
+        while (a < 58)
+        {
+                putchar(a);
+                a++;
+        }
+
+        while (z < 103)
+        {
+                putchar(z);
+                z++;
+        }
+        putchar('\n');
+        return (0);
 }

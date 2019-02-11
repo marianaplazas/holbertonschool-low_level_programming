@@ -1,20 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - start
+ *main start
  *
- * Return: 0
+ *Return =0 if is sucess
  */
 
 int main(void)
 {
-	char a;
+        char az;
 
-	for (a = 'a' ; a <= 'z' ; a++)
-	{
-		if (a != 'q' && a != 'e')
-			putchar (a);
-	}
-	putchar('\n');
-	return (0);
+        for (az = 'a' ; az <= 'z' ; az++)
+                putchar(az);
+        for (az = 'A' ; az <= 'Z' ; az++)
+                putchar(az);
+
+        putchar('\n');
+        return (0);
 }

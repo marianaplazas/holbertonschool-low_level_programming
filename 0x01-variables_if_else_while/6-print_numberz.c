@@ -3,18 +3,21 @@
  /**
   * main - start
   *
-  * Return: 0
+  * Return: 0 if is sucess
   */
 
 int main(void)
 {
 	int a;
 
-	for (a = 48; a < 58; a++)
+	a = 48;
 
+	while (a < 58)
 	{
-		putchar (a);
+		putchar(a);
+		a++;
 	}
-	putchar ('\n');
+
+	putchar('\n');
 	return (0);
 }
