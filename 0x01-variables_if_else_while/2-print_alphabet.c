@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - stars the program
+ * main - start
  *
- *Return =0 if is success
+ * Return: 0
  */
 
 int main(void)

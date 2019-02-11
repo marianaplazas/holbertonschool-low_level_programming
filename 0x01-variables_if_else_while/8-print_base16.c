@@ -4,25 +4,21 @@
  *main - start
  *
  *
- *Return =0 (success)
+ *Return: 0 
  */
 
 int main(void)
 {
 	int a;
 
-	for (a = 48; a < 58; n++)
+	for (a = 48 ; a <= 57 ; a++)
 	{
 		putchar(a);
 	}
-
-	for (a = 97; a < 103; n++)
+	for (a = 97 ; onten < 103 ; a++)
 	{
 		putchar(a);
 	}
-
-
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }

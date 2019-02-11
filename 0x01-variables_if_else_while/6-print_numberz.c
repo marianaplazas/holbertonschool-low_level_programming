@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/**
- *main - stars
- *
- *return =0 if is success
- */
+ /**
+  * main - start
+  *
+  * Return: 0
+  */
 
 int main(void)
 {
