@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
  *main - stars
  *
- *return =(0) if is success
+ *return =0 if is success
  */
+
 int main(void)
 {
 	int a;

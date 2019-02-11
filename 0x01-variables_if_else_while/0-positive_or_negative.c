@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- *main void
+ *main =void
  *
- *return always 0 if is succes
+ *return = 0 if is succes
  */
 
 int main(void)
@@ -22,7 +22,7 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else if (n < 0)
+        if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}

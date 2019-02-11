@@ -7,14 +7,17 @@
 
 int main(void)
 {
-        char az;
+	int b;
 
-	az ='123';
-
-	while (az > 97)
+	b = 'a';
+	while (b <= 'z')
 	{
-		putchar("az");
+		if (b != 'q' && b != 'e')
+		{
+			putchar(b);
+		}
+		b++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
