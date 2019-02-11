@@ -1,18 +1,18 @@
-B#include <stdio.h>
+#include<stdio.h>
 /**
- *main - stars
+ * main - entry point
  *
- *return =(0) if is success
+ * Return: always 0 if is success
  */
 
 int main(void)
 {
 	int a;
 
-	for (a = 48 ; a < 58 ; a++);
+	for (a = 0 ; a < 10 ; a++)
 	{
-	printf("%d", a);
+		printf("%d", a);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
