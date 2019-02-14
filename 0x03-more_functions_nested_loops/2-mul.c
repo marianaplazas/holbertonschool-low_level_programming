@@ -2,8 +2,8 @@
 /**
  *mul - multiplies two numbers (int)
  *
- *@a: frist int 
- *@b: second int
+ *@a: frist number
+ *@b: second number
  *
  *Return: the result of the multiplication
  */
