@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *print_diagonal(int n) - print the \ that are necesary
+ *print_diagonal - print the \ that are necesary
  *
  *@n: number of \ to print
  *
@@ -11,22 +11,20 @@ void print_diagonal(int n)
 	int a;
 	int b;
 
-	if (n <= 0)
-		_putchar(10);
-
-	for (a = 0; a < n; b++)
+	if (n > 0)
 	{
-		for (b = 0; n <= b; a++)
+		for (a = 0; a < n; a++)
 		{
-			if (a == b)
-			{
-				_putchar('\\');
-				_putchar(10);
-			}
-			else
+			for (b = 0; b < a; b++)
 			{
 				_putchar(' ');
 			}
+			_putchar('\\');
+			_putchar('\n');
 		}
+	}
+	else if (n <= 0)
+	{
+		_putchar('\n');
 	}
 }
