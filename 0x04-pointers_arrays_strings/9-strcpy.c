@@ -1,9 +1,11 @@
 #include "holberton.h"
 /**
- *print_array - print array
+ *_strcpy - copy the string
  *
  *@dest: the pointer
  *@src: number of the elements in the array
+ *
+ *Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
