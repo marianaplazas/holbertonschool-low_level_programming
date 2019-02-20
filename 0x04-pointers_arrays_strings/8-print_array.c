@@ -15,8 +15,10 @@ void print_array(int *a, int n)
 	while (b < n)
 	{
 	printf("%d", a[b]);
-	b++;
+
+	if (b != n - 1)
 	printf(", ");
+	b++;
 	}
 	putchar(10);
 }
