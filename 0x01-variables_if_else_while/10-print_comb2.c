@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -9,16 +9,22 @@ B#include <stdio.h>
 int main(void)
 {
 	int a;
+	int b;
 
 	a = 48;
+	b = 48;
 
 	while (a < 58)
 	{
+		while (b < 58)
+		{
 		putchar(a);
-		if (a < 57)
+		putchar(b;)
+		if (b == 57 && a == 57)
 		{
 			putchar(',');
 			putchar(' ');
+		}
 		}
 		a++;
 	}
