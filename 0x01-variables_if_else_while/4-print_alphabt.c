@@ -1,21 +1,18 @@
 #include <stdio.h>
-
 /**
- *main start
+ *main - starts the function
  *
- *Return =0 if is sucess
+ *Return: 0 if is sucess
  */
 
 int main(void)
 {
 	int a;
-	a = 97;
 
-        while (a < 123 && a != 101 && a != 113)
+	for (a = 97; a < 123; a++)
 	{
-                putchar(a);
-		putchar('\n');
-		a++;
+		putchar(a);
 	}
-        return (0);
+	putchar(10);
+	return (0);
 }
