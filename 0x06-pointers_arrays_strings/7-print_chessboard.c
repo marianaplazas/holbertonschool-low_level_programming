@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *print_chessboard - print the chessboard
+ *print_chessboard - print the chessboard in the screen
  *
  *@a: pointer
  */
@@ -12,7 +12,9 @@ void print_chessboard(char (*a)[8])
 	for (r = 0; r < 8; r++)
 	{
 		for (c = 0; c < 8; c++)
+		{
 			_putchar(a[r][c]);
+		}
+		_putchar(10);
 	}
-	_putchar(10);
 }
