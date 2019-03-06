@@ -5,6 +5,8 @@
  *
  *@size: the size of the string
  *@c: the char that initializes the string
+ *
+ *Return: the pointer
  */
 char *create_array(unsigned int size, char c)
 {
