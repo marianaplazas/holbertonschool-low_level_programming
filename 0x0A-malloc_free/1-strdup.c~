@@ -1,0 +1,15 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ *_strdup - copy string
+ *
+ *@str: string
+ *
+ *Return: the pointer with string
+ */
+char *_strdup(char *str)
+{
+	char *s;
+	int a, b;
+
+}
