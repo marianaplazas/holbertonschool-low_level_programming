@@ -12,19 +12,20 @@ int main(void)
 	int b;
 
 	a = 48;
-	b = 48;
 
 	while (a < 58)
 	{
+		b = 48;
 		while (b < 58)
 		{
 		putchar(a);
-		putchar(b;)
-		if (b == 57 && a == 57)
+		putchar(b);
+		if (a != 57 || b != 57)
 		{
 			putchar(',');
 			putchar(' ');
 		}
+		b++;
 		}
 		a++;
 	}
