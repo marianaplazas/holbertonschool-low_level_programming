@@ -2,14 +2,14 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
+ *print_all - print all formats
  *
- *
- *
+ *@format: the format
  */
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int a = 0; 
+	unsigned int a = 0;
 	unsigned int b = 0;
 	char *c;
 
