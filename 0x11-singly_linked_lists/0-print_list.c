@@ -9,12 +9,13 @@
  */
 size_t print_list(const list_t *h)
 {
-	int a;
+	size_t aux;
 
-	for (a = 0; h != NULL; a++)
+	aux = 0;
+	while (h != NULL)
 	{
-		printf("[%d] %s\n", h->len, h->str);
+		aux++;
 		h = h->next;
 	}
-	return (a);
+	return (aux);
 }

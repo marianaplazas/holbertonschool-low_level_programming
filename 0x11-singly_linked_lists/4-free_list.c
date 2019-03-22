@@ -5,16 +5,15 @@
  *
  *@head: pointer to the head of the list
  */
-size_t free_list(list_t *head)
+void free_list(list_t *head)
 {
-	size_t new_n;
-
-	new_n = 0;
-	while (h != NULL)
+	list_t *tmp;
+	
+	while (head != NULL)
 	{
-		printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
-		new_n++;
+		tmp = head;
+		head = head->next;
+		free(tmp->str);
+		free(tmp);
 	}
-	return (new_n);
 }
