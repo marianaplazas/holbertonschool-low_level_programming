@@ -7,15 +7,16 @@
  *
  *Return: a
  */
-size_t print_list(const list_t *h)
+void print_list(const list_t *h)
 {
-	size_t aux;
+	size_t count;
 
-	aux = 0;
-	while (h != NULL)
+	count = 0;
+	while (h !=  NULL)
 	{
-		aux++;
+		printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
+		count++;
 	}
-	return (aux);
+	return (count);
 }
