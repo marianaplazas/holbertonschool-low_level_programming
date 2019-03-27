@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- *print_list - print the list
+ *listint_len - print the list
  *
  *@h: pointer to the header
  *
@@ -9,7 +9,7 @@
  */
 size_t listint_len(const listint_t *h)
 {
-        int a = 0;
+	int a = 0;
 
 	while (h)
 	{
@@ -17,5 +17,5 @@ size_t listint_len(const listint_t *h)
 		a++;
 		h = h->next;
 	}
-	return(a);
+	return (a);
 }
