@@ -2,7 +2,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- *listint_len - print the list
+ *print_listint - print the list
  *
  *@h: pointer to the header
  *
