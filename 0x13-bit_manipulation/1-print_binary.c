@@ -1,12 +1,11 @@
-#include "hoberton.h"
+#include "holberton.h"
 #include <stdio.h>
 /**
  *print_binary - print the binary correspondent to a int
  *
  *@n: the integer
- *@index: the index
  */
-void print_binary(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
 	int index = 0;
 	int counter;
