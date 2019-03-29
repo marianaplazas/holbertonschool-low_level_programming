@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  *binary_to_uint - convert a string to unsigned int
  *
