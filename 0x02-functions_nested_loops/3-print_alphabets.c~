@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void)
+{
+	int l;
+	int u;
+
+	for (l = 97; l < 123; l++)
+		putchar(l);
+	for(u = 65; u < 91 ; u++)
+		putchar(u);
+	putchar(10);
+	return(0);
+}

@@ -10,3 +10,9 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
+void print_times_table(int n);
+/**
+ * the last is for the interview
+ */
+void more_numbers(void);
+void print_number(int n);
