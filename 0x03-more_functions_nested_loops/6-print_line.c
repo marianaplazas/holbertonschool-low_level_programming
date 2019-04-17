@@ -5,11 +5,12 @@
  *@n: number of times that should print -
  *
  */
-void print_line(int n)
+int print_line(int n)
 {
 	if (n <= 0)
 	{
 		_putchar(10);
+		return(0);
 	}
 	else
 	{
@@ -19,5 +20,6 @@ void print_line(int n)
 			n--;
 		}
 		_putchar(10);
+		return(1);
 	}
 }

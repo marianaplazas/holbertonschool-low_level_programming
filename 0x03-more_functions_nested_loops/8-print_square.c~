@@ -1,0 +1,17 @@
+#include <stdio.h>
+void print_square(int size)
+{
+        if (size <= 0)
+        {
+                putchar(10);
+        }
+        else
+        {
+                while (size > 0)
+                {
+                        putchar('#');
+                        size--;
+                }
+                putchar(10);
+        }
+}
