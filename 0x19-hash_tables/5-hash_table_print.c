@@ -5,8 +5,8 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int a = 0; 
-	unsigned long int b = 0; 
+	unsigned long int a = 0;
+	unsigned long int b = 0;
 	hash_node_t *tmp;
 
 	if (ht == NULL)
