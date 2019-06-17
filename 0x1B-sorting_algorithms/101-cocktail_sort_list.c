@@ -10,15 +10,19 @@ void cocktail_sort_list(listint_t **list)
 
 	while(j == 1)
 	{
-		for(i = *list; i->next != NULL; i = i->next)
+		for (i = *list; i != NULL; i = i->next)
 		{
-			if (i->n > i->next->n)
-				swap_list(i, aux, list);
+			while (i->next != NULL && i->n > i->next->n)
+				swap_list(i->next, aux, list);
+			if (i->next == NULL)
+				break;
 		}
-		for(; i->prev != NULL; i = i->prev)
+		for (; i != NULL; i = i->prev)
 		{
-			if (i->n < i->prev->n)
+			while (i->prev != NULL && i->n < i->prev->n)
 				swap_list(i, aux, list);
+			if (i->prev == NULL)
+				break;
 		}
 		for(aux = *list; j == 1; aux = aux->next)
 		{
