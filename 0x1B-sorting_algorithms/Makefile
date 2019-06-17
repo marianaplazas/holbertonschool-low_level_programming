@@ -1,2 +1,2 @@
 output:
-	gcc -g -Wall -Wextra -Werror -pedantic 100-main.c 100-shell_sort.c print_array.c -o shell
+	gcc -g -Wall -Wextra -Werror -pedantic 101-main.c 101-cocktail_sort_list.c print_list.c -o cocktail
