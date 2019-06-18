@@ -1,110 +1,79 @@
 #include "sort.h"
 /**
- *quick_sort - sort a array with Quick sort algorithm
+ *quick_sort - sort an array with quick sort
  *@array: pointer to the array
- *@size: the size of the array
+ *@size: the size of of the array
  */
 void quick_sort(int *array, size_t size)
 {
-	size_t antp = 0, last = size - 1, first = 0;
-	size_t conf = 0, truth = 1;
-	int *pivot;
+	if (array == NULL || size < 2)
+		return;
+	sort_this(array, 0, size - 1, size);
+}
+/**
+ *sort_this - recursive function that calls partition and swap
+ *@array: pointer to array
+ *@initial: the initial position in the array
+ *@final: the final number in the array
+ *@size: the size of the array
+ */
+void sort_this(int *array, int initial, int final, size_t size)
+{
+	int sort;
 
-	pivot = sort_this(array, first, last, size);
-	print_array(array, size);
-	printf("%lu\n", pivot);
-
-	while(truth != 0)
+	if (initial < final)
 	{
-		if (pivot[0] > 0)
+		sort = part_this(array, initial, final, size);
+		sort_this(array, initial, sort - 1, size);
+		sort_this(array, sort, final, size);
+	}
+}
+/**
+
+ *part_this - function that makes the partition
+ *@array: pointer to array
+ *@inital: initial position in the array
+ *@final: final number in the array
+ *@size: size of the array
+ */
+int part_this(int *array, int initial, int final, size_t size)
+{
+	int pivot = array[final];
+	int left = initial;
+	int right, tmp;
+
+	for (right = initial; right < final; right++)
+	{
+		if (array[right] <= pivot)
 		{
-			antp = pivot[2];
-			pivot = sort_this(array, first, pivot[2] - 1, size);
-			if (pivot[2] == antp)
-				first++;
-			else
+			if (left != right)
 			{
+				swap_this(&array[left], &array[right]);
 				print_array(array, size);
-				printf("%lu\n", pivot[2]);
 			}
-			continue;
-		}
-		if (pivot[1] > 0)
-		{
-			antp = pivot[2];
-			pivot = sort_this(array, pivot[2] + 1, last, size);
-			if (pivot[2] == antp)
-				last--;
-			else
-			{
-				print_array(array, size);
-				printf("%lu\n", pivot[2]);
-			}
-		}
-		for (conf = 0; conf <= size; conf++)
-		{
-			if (conf == size)
-				return;
-			if (array[conf] > array[conf + 1])
-				break;
+			left++;
 		}
 	}
-
+	if (left != final)
+	{
+		tmp = array[left];
+		array[left] = array[final];
+		array[final] = tmp;
+		print_array(array, size);
+	}
+	return (left);
 }
 
-int* sort_this(int *array, size_t first, size_t last, size_t size)
+/**
+ * swap_this - swap 
+ * @a: the menor
+ * @b: the higher
+ */
+void swap_this(int *a, int *b)
 {
-	size_t i = first, j = first, min = 0, grt = 0, k = 0;
-	int aux = 0, aux2 = 0;
-	int bus[] = {min, grt, first - 1};
-	
-	aux = array[last];
-	while (i < last)
-	{
-		if (array[i] < aux)
-			min++;
-		else
-			grt++;
-		i++;
-	}
-	if (min == last - first)
-	{
-		bus[0] = min;
-		bus[1] = grt;
-		bus[2] = first - 1;
-		return (bus);
-	}
-	if (grt == last - first)
-	{
-		bus[0] = min;
-		bus[1] = grt;
-		bus[2] = last + 1;
-		return (bus);
-	}
-	i = first;
-	j = first;
-	k = 0;
-	while (k != min)
-	{
-		if (array[j] < aux)
-		{
-			if (array[i] != array[j])
-			{
-				aux2 = array[i];
-				array[i] = array[j];
-				array[j] = aux2;
-				print_array(array, size);
-			}
-			k++;
-			i++;
-		}
-		j++;
-	}
-	aux2 = array[first + min];
-	array[first + min] = aux;
-	array[last] = aux2;
-	bus[0] = min;
-	bus[1] = grt;
-	bus[2] = first + min;
-	return (bus);
+	int tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
