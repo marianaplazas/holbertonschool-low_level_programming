@@ -11,7 +11,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	int compare;
 
 	if (tree == NULL)
-		return (NULL);
+		return (0);
 	height_l = tree->left ? 1 + binary_tree_is_full(tree->left) : 0;
 	height_r = tree->right ? 1 + binary_tree_is_full(tree->right) : 0;
 	compare = height_l - height_r;
