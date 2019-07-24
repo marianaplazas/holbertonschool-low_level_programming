@@ -1,9 +1,9 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_delete -
- *
- * Return: 
+ *binary_tree_delete - delete and free
+ *@tree: pointer to the tree
+ *Return: nothing is a void function
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
