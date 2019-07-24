@@ -2,7 +2,8 @@
 
 /**
  * binary_tree_node - create a node
- *
+ *@parent: pointer to the parent
+ *@value: the value to asing
  * Return: pointer to the new node
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
