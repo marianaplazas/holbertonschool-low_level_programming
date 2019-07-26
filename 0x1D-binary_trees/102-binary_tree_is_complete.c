@@ -26,5 +26,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 	int count = binary_tree_size(tree);
 	int index = 0;
 
+	if (tree == NULL)
+		return (0);
 	return (complete(tree, index, count));
 }
