@@ -23,7 +23,7 @@ int binary_search(int *array, size_t size, int value)
 		if (value == array[mid])
 			return (mid);
 		if (value < array[mid])
-			roof = mid;
+			roof = mid - 1;
 		else
 			floor = mid + 1;
 	}
